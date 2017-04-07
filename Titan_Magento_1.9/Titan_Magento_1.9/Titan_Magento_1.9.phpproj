@@ -10772,14 +10772,6 @@
     {
     "ProjRelPath" = "T"
     }
-    "index.php"
-    {
-    "ProjRelPath" = "T"
-    }
-    "web.config"
-    {
-    "ProjRelPath" = "T"
-    }
 }
 "ProjStartupServices"
 {
