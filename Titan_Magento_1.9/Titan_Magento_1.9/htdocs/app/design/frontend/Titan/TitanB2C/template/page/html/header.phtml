@@ -1,0 +1,60 @@
+<?php
+/**
+ * Copyright Titan Motorsports 2017
+ * Author Mark Lutz
+ * Create Date 03/29/2017
+ * 
+ * 
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<div class="header-container">
+    <div class="header">
+		<div id="hd">
+			<div id="topBar">
+				<div class="searchArea">
+					<form action="http://store.yahoo.com/cgi-bin/nsearch" method="get">
+						<input name="query" type="text" value="Enter keyword or item #" class="searchIn" onblur="if (this.value == '') { this.value = this.defaultValue; }" onfocus="if (this.value == this.defaultValue) { this.value = ''; }">
+						<input type="image" value="Go!" class="searchGo" src="/skin/frontend/Titan/TitanB2C/images/searchBtn.gif">
+						<input name="vwcatalog" type="hidden" value="titanmotorsports">
+					</form>
+				</div>
+				<div class="cartArea">
+					<div id="scMCholster-0061" class=" closed-0061">
+						<div id="ctrlPad-0061">
+							<div id="minCart-0061">
+							<a href="http://order.store.yahoo.net/titanmotorsports/cgi-bin/wg-order?titanmotorsports" id="emptyCook-0061">View Cart</a></div><div id="ctrlBox-0061">
+							<a id="toggLink-0061" href="http://order.store.yahoo.net/titanmotorsports/cgi-bin/wg-order?titanmotorsports"><span>Toggle Cart</span></a>
+							<a id="checkoutLink-0061" href="http://order.store.yahoo.net/titanmotorsports/cgi-bin/wg-order?titanmotorsports"><span>Checkout</span></a>
+							</div>
+						<div class="clearer-0061">
+						</div>
+						</div>
+						<div id="smCart-0061">
+							<iframe name="cartViewer-0061" id="cartViewer-0061" src="about:blank"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div id="logoBar">
+			<div id="logoArea" class="quick-access">
+				<h1 class="logo"><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="/skin/frontend/Titan/TitanB2C/images/Titan_Motorsports_Logo_01.png" alt="<?php echo $this->getLogoAlt() ?>" width="320" height="90" align="left" /></a></h1>
+			</div>
+		<div class="quick-access">
+			<?php echo $this->getChildHtml('store_language') ?>			
+		</div>
+		<div id="hd" class="phoneNumber">
+				<b>407-277-8423</b> M-F, 9am - 7pm, EST<br />
+				<a href="/" rel="nofollow">Home</a>|<a href="/tms_about_us" rel="nofollow">About Us</a>|<a href="http://wholesale.titanmotorsports.com" rel="nofollow" target="_blank">Wholesale</a>|<a href="http://blog.titanmotorsports.com/" rel="nofollow" target="_blank">Blog</a>|<a href="/titan_jobs" rel="nofollow">Careers</a>|<a href="/contact_us" rel="nofollow" target="_blank">Contact Us</a><span id="acctlinks"></span>
+			</div>
+		</div>
+		<div class="clear"></div>
+    </div>
+    <?php echo $this->getChildHtml('topBar') ?>
+    <?php echo $this->getChildHtml('topContainer'); ?>
+</div>
+<div class="clear"></div>

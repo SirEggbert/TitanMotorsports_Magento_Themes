@@ -1,0 +1,90 @@
+.vertnav-container {
+	margin-top:10px;
+}
+
+#vertnav li .vertnav-cat {
+	display:block;
+	border-bottom:1px dotted gray;
+	padding:3px;
+	width:170px;
+}
+ul#vertnav{
+	    list-style-type: none;
+}
+
+#vertnav li:before {
+    content: "►";
+    display: block;
+    float: left;
+    width: 1.2em;
+    color: rgba(231, 115, 6, 1);
+}
+#vertnav li.active:before {
+    content: "▼";
+    display: block;
+    float: left;
+    width: 1.2em;
+    color: rgba(231, 115, 6, 1);
+}
+
+/* ▲ &#9650; ► &#9658; ▼ &#9660; ◄ &#9668; */
+
+#vertnav li a {
+}
+
+#vertnav .inactive .vertnav-cat {
+	background-color:transparent;
+}
+ 
+#vertnav .next .vertnav-cat {
+	background-color:transparent;
+}
+
+#vertnav .prev .vertnav-cat {
+	background-color:transparent;
+}
+
+#vertnav .first .vertnav-cat {
+}
+
+#vertnav .last .vertnav-cat {
+}
+
+#vertnav .only .vertnav-cat {
+}
+
+#vertnav li.parent .vertnav-cat {
+	background-color:transparent;
+	font-weight:bold;
+}
+
+#vertnav li.active .vertnav-cat {
+	background-color:transparent;
+	font-weight:bold;
+}
+
+#vertnav li.inactive .vertnav-cat {
+	font-weight:normal;
+}
+
+#vertnav .level0 .vertnav-cat {
+}
+
+#vertnav .level1 .vertnav-cat {
+	padding-left:10px;
+	width:182px;
+}
+
+#vertnav .level2 .vertnav-cat {
+	padding-left:20px;
+	width:172px;
+}
+
+#vertnav .level3 .vertnav-cat {
+	padding-left:30px;
+	width:162px;
+}
+
+select.dropdown{
+	width: 180px;
+}
