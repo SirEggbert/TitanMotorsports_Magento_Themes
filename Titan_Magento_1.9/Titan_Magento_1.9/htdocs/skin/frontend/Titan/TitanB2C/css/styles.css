@@ -388,6 +388,17 @@ div#content_r4{
 }
 
 
+div#tms_BreadCrumb_Container{
+	width:760px;
+	height:24px;
+	text-align:left;
+	background: url(../images/tms_titlebar_background.gif) repeat-x top left;
+}
+.tms_BreadCrumb_Header{
+	background: url(../images/breadcrumbsBkgd.gif) no-repeat top left;
+	height:24px;
+}
+
 /**** End Main Content ****/
 
 /*-------------------------Mini Cart Styles----------------------------*/

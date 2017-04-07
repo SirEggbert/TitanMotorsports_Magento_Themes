@@ -39,6 +39,19 @@
                 <!--?php endif; ?-->
                 <div class="col-left sidebar"><?php echo $this->getChildHtml('left') ?></div>
                 <div class="col-main">
+					<?php
+						// IF WE ARE ON HOMEPAGE
+						if(
+							Mage::getSingleton('cms/page')->getIdentifier() == 'home' &&
+								Mage::app()->getFrontController()->getRequest()->getRouteName() == 'cms'
+						) : ?>
+						// Put your homepage-only code in here.
+						<div class="tms_BreadCrumb_Container">
+							<div class="tms_BreadCrumb_Header">
+								<?php echo $this->getChildHtml('breadcrumbs') ?>
+							</div>
+						</div>
+					<?php endif; ?>
                     <?php echo $this->getChildHtml('global_messages') ?>
                     <?php echo $this->getChildHtml('content') ?>
                 </div>
