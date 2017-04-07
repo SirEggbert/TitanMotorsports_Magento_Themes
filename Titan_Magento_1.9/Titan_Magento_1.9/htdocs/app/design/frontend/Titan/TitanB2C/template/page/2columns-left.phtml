@@ -41,14 +41,18 @@
                 <div class="col-main">
 					<?php
 						// IF WE ARE ON HOMEPAGE
-						if(
-							Mage::getSingleton('cms/page')->getIdentifier() == 'home' &&
-								Mage::app()->getFrontController()->getRequest()->getRouteName() == 'cms'
-						) : ?>
+						$action = Mage::app()->getFrontController()->getAction()->getFullActionName();
+					//echo $action ;
+					if($action != 'cms_index_index') : 
 						// Put your homepage-only code in here.
-						<div class="tms_BreadCrumb_Container">
-							<div class="tms_BreadCrumb_Header">
-								<?php echo $this->getChildHtml('breadcrumbs') ?>
+					?>
+<div class="tms_BreadCrumb_Container">
+<div class="tms_BreadCrumb_Header"> breadcrumbs Not Working
+<?php
+
+echo $this->getChildHtml('breadcrumbs'); 
+?>
+								<!--?php echo $this->getChildHtml('onlybreadcrumbs') ?-->
 							</div>
 						</div>
 					<?php endif; ?>

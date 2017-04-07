@@ -4924,6 +4924,10 @@
     {
     "ProjRelPath" = "T"
     }
+    "htdocs\\app\\design\\frontend\\Titan\\TitanB2C\\layout\\cms.xml"
+    {
+    "ProjRelPath" = "T"
+    }
     "htdocs\\app\\design\\frontend\\Titan\\TitanB2C\\layout\\contacts.xml"
     {
     "ProjRelPath" = "T"
@@ -5516,6 +5520,10 @@
     {
     "ProjRelPath" = "T"
     }
+    "htdocs\\app\\design\\frontend\\Titan\\TitanB2C\\template\\page\\html\\breadcrumbs.phtml"
+    {
+    "ProjRelPath" = "T"
+    }
     "htdocs\\app\\design\\frontend\\Titan\\TitanB2C\\template\\page\\html\\footer.phtml"
     {
     "ProjRelPath" = "T"
@@ -5525,6 +5533,10 @@
     "ProjRelPath" = "T"
     }
     "htdocs\\app\\design\\frontend\\Titan\\TitanB2C\\template\\page\\html\\pager.phtml"
+    {
+    "ProjRelPath" = "T"
+    }
+    "htdocs\\app\\design\\frontend\\Titan\\TitanB2C\\template\\page\\html\\top.links.phtml"
     {
     "ProjRelPath" = "T"
     }

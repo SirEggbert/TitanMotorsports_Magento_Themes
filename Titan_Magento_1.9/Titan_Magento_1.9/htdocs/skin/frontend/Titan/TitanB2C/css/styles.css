@@ -155,10 +155,12 @@ div#hd #topBar {
 	background: url(../images/headerTopBarBkgd.gif) 0 0 no-repeat;
 	margin: 6px 0 0 0 ;
 }
-.breadcrumbs ul li {
-	list-style-type: none;
-}
- 
+/* BreadCrumbs */
+.breadcrumbs { font-size:11px; line-height:1.25; margin:0 0 13px; }
+.breadcrumbs li { display:inline; }
+.breadcrumbs li strong { font-weight:bold; }
+.breadcrumbs ul li { list-style-type: none;}
+
 .f-left ul li {
 	list-style-type: none;
 }
