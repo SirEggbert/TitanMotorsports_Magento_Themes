@@ -8,14 +8,14 @@
  */
 ?>
 <div class="footer-container">
-    <div class="footer">
-        <!--?php echo $this->getChildHtml('bottomContainer') ?-->
-        <!--div class="f-right"-->
-            <!--? php echo $this->getChildHtml('store_switcher') ?-->
-        <!--/div-->
-        <!--div class="f-left"-->
+    <div class="footer"> 
+        <?php echo $this->getChildHtml('bottomContainer') ?>
+        <div class="f-right">
+            <?php echo $this->getChildHtml('store_switcher') ?>
+        </div>
+        <div class="f-left">
             <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('tms_footer_links')->toHtml(); ?> 
             <address><?php echo $this->getCopyright() ?></address>
-        <!--/div-->
+        </div>
     </div>
 </div>

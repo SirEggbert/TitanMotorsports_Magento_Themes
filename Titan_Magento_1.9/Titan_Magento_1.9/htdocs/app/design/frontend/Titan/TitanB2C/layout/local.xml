@@ -1,8 +1,17 @@
 <?xml version="1.0"?>
 <layout>
 	<default>
-    <reference name="content">
-      <remove name="breadcrumbs" />
+    <!-- Unset cart from sidebar -->
+    <reference name="header">
+      <action method="unsetChild">
+        <name>minicart_head</name>
+      </action>
+    </reference>
+    <!-- Insert cart in header -->
+    <reference name="catalog.topnav">
+      <action method="insert">
+        <name>minicart_head</name>
+      </action>
     </reference>
 		<reference name="root">
 			<action method="setTemplate">
